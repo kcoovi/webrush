@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fff;
+  color: #000;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+/* Navigation */
+.nav-container {
+  background: #fff;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 150px;
+  transition: opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  opacity: 0.8;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 2rem;
+}
+
+.nav-menu a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-menu a:hover {
+  color: rgb(189, 189, 189);
+}
+
+.nav-menu a.active {
+  color: #4caf50;
+}
+
+.donate-link {
+  background: #4caf50;
+  color: white !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.donate-link:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.content {
+  margin-top: 80px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  color: #000;
+}
+
+.content p {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .nav-main {
+    padding: 0 0.5rem;
+  }
+
+  .logo-img {
+    height: 20px;
+    margin-right: auto;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 0.8rem 0;
+    text-align: center;
+  }
+
+  .nav-menu a {
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  .donate-link {
+    order: 2;
+    margin-left: 0;
+    margin-right: 1rem;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    display: block;
+    order: 3;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-menu li {
+    margin-left: 1.5rem;
+  }
+
+  .donate-link {
+    margin-left: 1.5rem;
+  }
+  .fly {
+    max-height: 30%;
+    max-width: 30%;
+  }
+  .cta {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-left: 4px solid #4caf50;
+  }
+}
