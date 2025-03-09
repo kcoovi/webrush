@@ -3,9 +3,9 @@
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #f8f9fa;
+  background: #fdfdfd;
   border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
