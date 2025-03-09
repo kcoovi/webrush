@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relation Client - WebRush</title>
+    <title>Contactez-nous - WebRush</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/form.css" />
   </head>
   <body>
     <nav class="nav-container">
@@ -21,7 +22,7 @@
           <li><a href="commercial.html">Représentation commerciale</a></li>
           <li><a href="support.html">Support client omnicanal</a></li>
         </ul>
-        <a href="contact.html" class="donate-link">Contact</a>
+        <a href="contact.html" class="donate-link active">Contact</a>
         <button class="hamburger">
           <span></span>
           <span></span>
@@ -31,11 +32,42 @@
     </nav>
 
     <main class="content">
-      <h1>Gestion de Relation Client</h1>
-      <p>Optimisez votre service client avec nos solutions complètes...</p>
-      <section>
-        <h2>Support 24/7</h2>
-        <p>Service client disponible à tout moment.</p>
+      <section class="contact-form">
+        <h2>Contactez-nous</h2>
+        <form action="https://formspree.io/f/mwplejdp" method="POST">
+          <div class="form-group">
+            <label for="name">Votre Nom:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet:</label>
+            <select id="subject" name="subject" required>
+              <option value="">Choisir un sujet</option>
+              <option>Prestation de service en communication</option>
+              <option>Marketing digital</option>
+              <option>Télémarketing</option>
+              <option>Télévente</option>
+              <option>Téléprospection</option>
+              <option>Gestion de la relation client</option>
+              <option>Représentation commerciale</option>
+              <option>Support client digital et par téléphone</option>
+              <option>Autres</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message (optionnel):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit">Envoyer</button>
+        </form>
       </section>
     </main>
 
