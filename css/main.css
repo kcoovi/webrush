@@ -19,6 +19,7 @@ body {
 h1 {
   text-align: center;
 }
+
 /* Navigation */
 .nav-container {
   background: #fff;
@@ -122,17 +123,24 @@ h1 {
   flex: 1;
 }
 
-.content h1,
-.content h2,
-.content h3 {
-  color: #000;
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: opacity 0.3s ease;
 }
 
-.content p {
-  color: #000;
+.overlay.active {
+  display: block;
+  opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-main {
     padding: 0 0.5rem;
   }
@@ -143,28 +151,32 @@ h1 {
   }
 
   .nav-menu {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
     background: #fff;
-    padding: 1rem;
+    padding: 2rem 1rem;
     flex-direction: column;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu.active {
-    display: flex;
+    right: 0;
   }
 
   .nav-menu li {
-    margin: 0.8rem 0;
-    text-align: center;
+    margin: 1rem 0;
+    text-align: left;
   }
 
   .nav-menu a {
-    color: #333;
     font-size: 1.1rem;
+    display: block;
+    padding: 0.5rem;
   }
 
   .donate-link {
@@ -178,21 +190,36 @@ h1 {
   .hamburger {
     display: block;
     order: 3;
+    z-index: 1002;
+  }
+
+  .hamburger.active span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  body.menu-open {
+    overflow: hidden;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .nav-menu li {
-    margin-left: 1.5rem;
+@media (min-width: 1025px) {
+  .nav-menu {
+    display: flex !important;
   }
 
-  .donate-link {
-    margin-left: 1.5rem;
-  }
   .fly {
-    max-height: 30%;
-    max-width: 30%;
+    max-height: 70%;
+    max-width: 100%;
   }
+
   .cta {
     font-weight: bold;
     margin-top: 1.5rem;
