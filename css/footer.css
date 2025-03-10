@@ -1,7 +1,9 @@
+/* Footer Styles */
 .footer {
   background: #111;
   color: white;
   padding: 2rem 1rem;
+  text-align: center;
   margin-top: auto;
 }
 
@@ -10,8 +12,9 @@
   margin: 0 auto;
 }
 
+/* Contact Section */
 .contact-section {
-  border-top: 2px solid #fff;
+  border-top: 2px solid #4caf50;
   padding: 1.5rem 0;
   position: relative;
   margin: 0 auto;
@@ -25,9 +28,10 @@
   transform: translateX(-50%);
   background: #111;
   padding: 0 1rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  color: #fff;
+  font-weight: bold;
+  color: #4caf50;
 }
 
 .contact-info {
@@ -36,12 +40,12 @@
 }
 
 .contact-item {
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  color: #fff;
+  font-size: 1rem;
 }
 
 .contact-label {
@@ -49,6 +53,7 @@
   color: #4caf50;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer {
     padding: 1.5rem 1rem;
@@ -64,6 +69,7 @@
 
   .contact-item {
     flex-direction: column;
-    margin: 1rem 0;
+    text-align: center;
+    margin: 0.8rem 0;
   }
 }

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeMenu() {
     navMenu.classList.remove("active");
     hamburger.classList.remove("active");
-    overlay.classList.remove("active");
+    overlay?.classList.remove("active");
     body.classList.remove("menu-open");
     hamburger.setAttribute("aria-expanded", "false");
   }
@@ -22,15 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setAttribute("aria-expanded", !isExpanded);
       navMenu.classList.toggle("active");
       hamburger.classList.toggle("active");
-      overlay.classList.toggle("active");
+      overlay?.classList.toggle("active");
       body.classList.toggle("menu-open");
     });
   }
 
   // Close menu when clicking overlay
-  if (overlay) {
-    overlay.addEventListener("click", closeMenu);
-  }
+  overlay?.addEventListener("click", closeMenu);
 
   // Close mobile menu when clicking navigation links
   document.querySelectorAll(".nav-menu a").forEach((link) => {
@@ -42,30 +40,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Close menu when resizing above mobile breakpoint
-  window.addEventListener("resize", function () {
+  window.addEventListener("resize", () => {
     if (window.innerWidth > 1024) {
       closeMenu();
     }
   });
 
   // Accessibility - Close menu on ESC key press
-  document.addEventListener("keydown", function (e) {
+  document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && navMenu.classList.contains("active")) {
       closeMenu();
     }
   });
 
   // Active Page Indicator
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  let currentPage = window.location.pathname.split("/").pop();
+  if (!currentPage || currentPage === "index.html") {
+    currentPage = "index.html";
+  }
 
   document.querySelectorAll(".nav-menu a").forEach((link) => {
     const linkPage = link.getAttribute("href").split("/").pop();
-
-    // Check if the current page matches the link OR it's the home page
-    if (
-      linkPage === currentPage ||
-      (currentPage === "index.html" && linkPage === "")
-    ) {
+    if (linkPage === currentPage) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -80,9 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
+      const targetId = this.getAttribute("href");
+      const target = document.querySelector(targetId);
       if (target) {
+        e.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
