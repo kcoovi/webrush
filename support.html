@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="preload" href="img/logo.png" as="image" />
+
+    <style>
+      /* Default styling */
+      img.support-img {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 30%;
+      }
+
+      @media (max-width: 768px) {
+        img.support-img {
+          width: 50%;
+          float: right;
+          margin-left: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="nav-container">
@@ -14,7 +32,6 @@
         <a href="index.html" class="logo">
           <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
         </a>
-
         <ul class="nav-menu">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">A propos</a></li>
@@ -33,18 +50,13 @@
     </nav>
 
     <main class="content">
-      <h1>Support client omnicanal</h1>
+      <h1 style="text-align: left;">Support client omnicanal</h1>
 
       <section style="overflow: auto">
         <img
           src="img/rc/sp.jpg"
           alt="Support client omnicanal"
-          style="
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 10px;
-            width: 27%;
-          "
+          class="support-img"
         />
         <p>
           Votre centre d'appels vous offre un service de support client
@@ -96,9 +108,11 @@
           <div class="contact-info">
             <p class="contact-item">
               <span class="contact-label">Email:</span>
-              <a href="mailto:info@webrush.site">info@webrush.site</a>
+              <a href="mailto:info@webrush.site" style="color: #fff"
+                >info@webrush.site</a
+              >
             </p>
-            <p class="contact-item">
+            <p class="contact-item" style="color: #fff">
               <span class="contact-label">Téléphone:</span>
               +33 1 23 45 67 89
             </p>
