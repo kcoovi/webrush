@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="preload" href="img/logo.png" as="image" />
+    <style>
+      /* Default styling */
+      img.commercial-img {
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 29%;
+      }
+
+      @media (max-width: 768px) {
+        img.commercial-img {
+          width: 55%;
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="nav-container">
@@ -33,9 +50,11 @@
     </nav>
 
     <main class="content">
-      <h1>Représentation Commerciale</h1>
+      <h1 style="text-align: left">Représentation Commerciale</h1>
 
       <section>
+        <img src="img/rc/repc3.jpg" alt="commercial" class="commercial-img" />
+        <p></p>
         <p>
           Nous offrons un service de représentation commerciale conçu pour aider
           votre entreprise à atteindre ses objectifs de vente tout en explorant
