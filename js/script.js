@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.querySelector(".overlay");
   const body = document.body;
 
-  // Function to close the mobile menu
+  
   function closeMenu() {
     navMenu.classList.remove("active");
     hamburger.classList.remove("active");
