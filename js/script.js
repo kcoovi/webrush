@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Mobile Menu Elements
+  // Navigation functionality
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const donateLink = document.querySelector(".donate-link");
   const overlay = document.querySelector(".overlay");
   const body = document.body;
 
-  
   function closeMenu() {
     navMenu.classList.remove("active");
     hamburger.classList.remove("active");
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.setAttribute("aria-expanded", "false");
   }
 
-  // Toggle mobile menu
   if (hamburger && navMenu) {
     hamburger.addEventListener("click", function () {
       const isExpanded = this.getAttribute("aria-expanded") === "true";
@@ -27,10 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Close menu when clicking overlay
   overlay?.addEventListener("click", closeMenu);
-
-  // Close mobile menu when clicking navigation links
   document.querySelectorAll(".nav-menu a").forEach((link) => {
     link.addEventListener("click", () => {
       if (window.innerWidth <= 1024) {
@@ -39,21 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close menu when resizing above mobile breakpoint
   window.addEventListener("resize", () => {
     if (window.innerWidth > 1024) {
       closeMenu();
     }
   });
 
-  // Accessibility - Close menu on ESC key press
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && navMenu.classList.contains("active")) {
       closeMenu();
     }
   });
 
-  // Active Page Indicator
+  // Active page detection
   let currentPage = window.location.pathname.split("/").pop();
   if (!currentPage || currentPage === "index.html") {
     currentPage = "index.html";
@@ -68,12 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Set active class for donate link separately
   if (donateLink && currentPage === "donate.html") {
     donateLink.classList.add("active");
   }
 
-  // Smooth scroll for anchor links
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
