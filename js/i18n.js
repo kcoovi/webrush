@@ -36,7 +36,7 @@ const i18n = {
     async loadTranslations(lang) {
         console.log('i18n: Loading translations for:', lang);
         try {
-            const response = await fetch(`/lang/${lang}.json`);
+            const response = await fetch(`lang/${lang}.json`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
