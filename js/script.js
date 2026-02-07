@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Navigation functionality
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
+  const navContainer = document.querySelector(".nav-container");
   const donateLink = document.querySelector(".donate-link");
   const overlay = document.querySelector(".overlay");
   const body = document.body;
@@ -46,6 +47,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Navbar scroll effect
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+      navContainer?.classList.add("scrolled");
+    } else {
+      navContainer?.classList.remove("scrolled");
+    }
+    
+    lastScroll = currentScroll;
+  }, { passive: true });
+
   // Active page detection
   let currentPage = window.location.pathname.split("/").pop();
   if (!currentPage || currentPage === "index.html") {
@@ -65,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     donateLink.classList.add("active");
   }
 
-  // Smooth scroll
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const targetId = this.getAttribute("href");
@@ -75,5 +90,27 @@ document.addEventListener("DOMContentLoaded", function () {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
+  });
+
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const animateOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        animateOnScroll.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe elements for scroll animation
+  document.querySelectorAll('section, .gallery-img, .about-content').forEach(el => {
+    el.classList.add('animate-ready');
+    animateOnScroll.observe(el);
   });
 });

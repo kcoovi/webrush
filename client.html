@@ -1,101 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relation Client - WebRush</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="preload" href="img/logo.png" as="image" />
-    <style>
-      .client-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        margin: 20px auto;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-main">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
-        </a>
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="telemarketing.html">Télémarketing</a></li>
-          <li><a href="client.html">Relation client</a></li>
-          <li><a href="commercial.html">Représentation commerciale</a></li>
-          <li><a href="support.html">Support client omnicanal</a></li>
-        </ul>
-        <a href="contact.html" class="donate-link">Contact</a>
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Gestion de la Relation Client (GRC) avec WebRush - Optimisez vos interactions clients." />
+  <title>Relation Client - WebRush</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-primary: #fff;
+      --text-primary: #1e293b;
+      --nav-height: 80px
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary)
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      height: var(--nav-height)
+    }
+
+    .content {
+      margin-top: calc(var(--nav-height) + 20px);
+      padding: 2rem;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  </style>
+  <link rel="preload" href="img/logo.png" as="image" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/footer.min.css" />
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="telemarketing.html" data-i18n="nav.telemarketing">Télémarketing</a></li>
+        <li><a href="client.html" class="active" data-i18n="nav.client">Relation client</a></li>
+        <li><a href="commercial.html" data-i18n="nav.commercial">Représentation commerciale</a></li>
+        <li><a href="support.html" data-i18n="nav.support">Externalisation Omnicanal</a></li>
+      </ul>
+      <a href="contact.html" class="donate-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-selector">
+        <button class="lang-current">
+          <span class="lang-flag">FR</span>
+          <span class="lang-code">FR</span>
+          <span class="lang-arrow">▼</span>
         </button>
-      </div>
-    </nav>
-
-    <main class="content">
-      <h1>Gestion de la Relation Client (GRC)</h1>
-      <img src="img/rc/recl.jpg" alt="Client" class="client-img" />
-      <p>
-        Notre centre de contact propose un service de Gestion de la Relation
-        Client (GRC) conçu pour optimiser vos interactions et maximiser votre
-        croissance tout en assurant une sécurité et une fiabilité absolues.
-        Grâce à des outils CRM performants et une expertise éprouvée, nous
-        centralisons et analysons toutes vos données clients, vous permettant de
-        prouver l'impact de votre stratégie sur la satisfaction et la fidélité
-        de vos clients. Notre approche personnalisée facilite la découverte de
-        nouvelles opportunités commerciales tout en offrant une garantie de
-        résultats concrets et durables.
-      </p>
-      <br />
-
-      <section>
-        <h2>Externalisez votre GRC avec WebRush</h2>
-        <p>
-          En externalisant votre GRC avec WebRush, vous économisez du temps et
-          de l'argent, tout en maximisant vos résultats grâce à une gestion
-          optimisée des processus et des campagnes marketing. Avec une
-          combinaison unique de technologie de pointe et d'expertise humaine,
-          nous vous aidons à transformer chaque interaction en une opportunité
-          de croissance et à explorer de nouveaux horizons pour votre
-          entreprise.
-        </p>
-      </section>
-      <br />
-
-      <section>
-        <h2>Solution multi-sectorielle</h2>
-        <p>
-          Que vous œuvriez dans le e-commerce, la santé, la technologie ou tout
-          autre secteur, notre service s'adapte à vos besoins pour offrir une
-          solution facile et performante. Nous accompagnons les entreprises de
-          toutes tailles dans l'amélioration de leur expérience client et
-          l'optimisation de leurs performances commerciales.
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-section">
-          <div class="contact-title"></div>
-          <div class="contact-info">
-            <p class="contact-item">
-              <span class="contact-label">Email:</span>
-              info@webrush.site
-            </p>
+        <div class="lang-dropdown">
+          <div class="lang-option" data-lang="fr">
+            <span class="lang-flag">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-check">✓</span>
+          </div>
+          <div class="lang-option" data-lang="en">
+            <span class="lang-flag">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check">✓</span>
           </div>
         </div>
       </div>
-    </footer>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <script src="js/script.js" defer></script>
-  </body>
+  <main class="content">
+    <h1 data-i18n="client.title">Gestion de la Relation Client (GRC)</h1>
+    <img src="img/rc/recl.jpg" alt="Client" class="client-img" />
+    <p data-i18n="client.intro">
+      Notre centre de contact propose un service de Gestion de la Relation
+      Client (GRC) conçu pour optimiser vos interactions et maximiser votre
+      croissance tout en assurant une sécurité et une fiabilité absolues.
+      Grâce à des outils CRM performants et une expertise éprouvée, nous
+      centralisons et analysons toutes vos données clients, vous permettant de
+      prouver l'impact de votre stratégie sur la satisfaction et la fidélité
+      de vos clients. Notre approche personnalisée facilite la découverte de
+      nouvelles opportunités commerciales tout en offrant une garantie de
+      résultats concrets et durables.
+    </p>
+    <br />
+
+    <section>
+      <h2 data-i18n="client.outsource_title">Externalisez votre GRC avec WebRush</h2>
+      <p data-i18n="client.outsource_desc">
+        En externalisant votre GRC avec WebRush, vous économisez du temps et
+        de l'argent, tout en maximisant vos résultats grâce à une gestion
+        optimisée des processus et des campagnes marketing. Avec une
+        combinaison unique de technologie de pointe et d'expertise humaine,
+        nous vous aidons à transformer chaque interaction en une opportunité
+        de croissance et à explorer de nouveaux horizons pour votre
+        entreprise.
+      </p>
+    </section>
+    <br />
+
+    <section>
+      <h2 data-i18n="client.multi_title">Solution multi-sectorielle</h2>
+      <p data-i18n="client.multi_desc">
+        Que vous œuvriez dans le e-commerce, la santé, la technologie ou tout
+        autre secteur, notre service s'adapte à vos besoins pour offrir une
+        solution facile et performante. Nous accompagnons les entreprises de
+        toutes tailles dans l'amélioration de leur expérience client et
+        l'optimisation de leurs performances commerciales.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-section">
+        <div class="contact-title"></div>
+        <div class="contact-info">
+          <p class="contact-item">
+            <span class="contact-label">Email:</span>
+            info@webrush.site
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
 </html>

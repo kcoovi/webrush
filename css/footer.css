@@ -1,75 +1,115 @@
-/* Footer Styles */
+/* ========================================
+   Footer - Modern Design
+   ======================================== */
+
 .footer {
-  background: #111;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: white;
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary, #10b981), transparent);
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Contact Section */
 .contact-section {
-  border-top: 2px solid #ffffff;
-  padding: 1.5rem 0;
-  position: relative;
-  margin: 0 auto;
-  max-width: 600px;
+  display: inline-block;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
 }
 
 .contact-title {
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #111;
-  padding: 0 1rem;
   font-size: 0.85rem;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #4caf50;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--primary, #10b981);
+  margin-bottom: 1rem;
 }
 
 .contact-info {
   text-align: center;
-  margin-top: 1rem;
 }
 
 .contact-item {
-  margin: 0.7rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  color: var(--primary, #10b981);
+}
+
+.contact-item a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--primary, #10b981);
 }
 
 .contact-label {
-  font-weight: bold;
-  color: #4caf50;
+  font-weight: 600;
+  color: var(--primary, #10b981);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .footer {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .contact-section {
-    padding: 1rem 0;
-  }
-
-  .contact-title {
-    font-size: 1rem;
+    padding: 1.25rem 1.5rem;
+    width: 100%;
+    max-width: 90%;
   }
 
   .contact-item {
     flex-direction: column;
-    text-align: center;
-    margin: 0.8rem 0;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-item a {
+    padding: 0.5rem 0;
+    display: inline-block;
   }
 }

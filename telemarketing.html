@@ -1,113 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Télémarketing - WebRush</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="preload" href="img/logo.png" as="image" />
-    <style>
-      .telemarketing-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        margin: 20px auto;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-main">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
-        </a>
 
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="telemarketing.html">Télémarketing</a></li>
-          <li><a href="client.html">Relation client</a></li>
-          <li><a href="commercial.html">Représentation commerciale</a></li>
-          <li><a href="support.html">Support client omnicanal</a></li>
-        </ul>
-        <a href="contact.html" class="donate-link">Contact</a>
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Services de télémarketing WebRush - Appels sortants et entrants pour développer votre entreprise." />
+  <title>Télémarketing - WebRush</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-primary: #fff;
+      --text-primary: #1e293b;
+      --nav-height: 80px
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary)
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      height: var(--nav-height)
+    }
+
+    .content {
+      margin-top: calc(var(--nav-height) + 20px);
+      padding: 2rem;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  </style>
+  <link rel="preload" href="img/logo.png" as="image" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/footer.min.css" />
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="telemarketing.html" class="active" data-i18n="nav.telemarketing">Télémarketing</a></li>
+        <li><a href="client.html" data-i18n="nav.client">Relation client</a></li>
+        <li><a href="commercial.html" data-i18n="nav.commercial">Représentation commerciale</a></li>
+        <li><a href="support.html" data-i18n="nav.support">Externalisation Omnicanal</a></li>
+      </ul>
+      <a href="contact.html" class="donate-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-selector">
+        <button class="lang-current">
+          <span class="lang-flag">FR</span>
+          <span class="lang-code">FR</span>
+          <span class="lang-arrow">▼</span>
         </button>
-      </div>
-    </nav>
-
-    <main class="content">
-      <br />
-      <h1>Services de Télémarketing</h1>
-      <img src="img/rc/tm.jpg" alt="Télémarketing" class="telemarketing-img" />
-
-      <section>
-        <p>
-          <strong>Webrush</strong> met à votre disposition des services de
-          télémarketing personnalisés pour aider votre entreprise à atteindre
-          efficacement ses objectifs commerciaux. Notre équipe spécialisée
-          utilise des techniques de marketing direct par téléphone pour
-          promouvoir vos produits ou services, collecter des informations
-          précieuses et offrir une assistance client de qualité.
-        </p>
-        <br />
-      </section>
-
-      <section>
-        <h2>Nos services incluent :</h2>
-        <ul>
-          <li>
-            <h3>Appels sortants</h3>
-            <p>
-              Nous contactons proactivement vos clients potentiels pour
-              présenter vos offres et générer de nouvelles opportunités
-              commerciales.
-            </p>
-          </li>
-          <li>
-            <h3>Appels entrants</h3>
-            <p>
-              Nous gérons les appels de vos clients intéressés, souvent en
-              réponse à vos campagnes publicitaires, assurant ainsi un service
-              client réactif et professionnel.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <p>
-          En choisissant <strong>Webrush</strong>, vous bénéficiez d'une
-          communication directe et personnalisée avec votre audience cible, ce
-          qui facilite la promotion de vos produits ou services et améliore la
-          satisfaction client.
-        </p>
-        <p class="cta">
-          Contactez-nous dès aujourd'hui pour découvrir comment nos solutions de
-          télémarketing peuvent contribuer à la croissance de votre entreprise.
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-section">
-          <div class="contact-title"></div>
-          <div class="contact-info">
-            <p class="contact-item">
-              <span class="contact-label">Email:</span>
-              <a href="mailto:info@webrush.site">info@webrush.site</a>
-            </p>
+        <div class="lang-dropdown">
+          <div class="lang-option" data-lang="fr">
+            <span class="lang-flag">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-check">✓</span>
+          </div>
+          <div class="lang-option" data-lang="en">
+            <span class="lang-flag">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check">✓</span>
           </div>
         </div>
       </div>
-    </footer>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <script src="js/script.js" defer></script>
-  </body>
+  <main class="content">
+    <br />
+    <h1 data-i18n="telemarketing.title">Services de Télémarketing</h1>
+    <img src="img/rc/tm.jpg" alt="Télémarketing" class="telemarketing-img" />
+
+    <section>
+      <p data-i18n="telemarketing.intro">
+        <strong>Webrush</strong> met à votre disposition des services de
+        télémarketing personnalisés pour aider votre entreprise à atteindre
+        efficacement ses objectifs commerciaux. Notre équipe spécialisée
+        utilise des techniques de marketing direct par téléphone pour
+        promouvoir vos produits ou services, collecter des informations
+        précieuses et offrir une assistance client de qualité.
+      </p>
+      <br />
+    </section>
+
+    <section>
+      <h2 data-i18n="telemarketing.services_title">Nos services incluent :</h2>
+      <ul>
+        <li>
+          <h3 data-i18n="telemarketing.outbound_title">Appels sortants</h3>
+          <p data-i18n="telemarketing.outbound_desc">
+            Nous contactons proactivement vos clients potentiels pour
+            présenter vos offres et générer de nouvelles opportunités
+            commerciales.
+          </p>
+        </li>
+        <li>
+          <h3 data-i18n="telemarketing.inbound_title">Appels entrants</h3>
+          <p data-i18n="telemarketing.inbound_desc">
+            Nous gérons les appels de vos clients intéressés, souvent en
+            réponse à vos campagnes publicitaires, assurant ainsi un service
+            client réactif et professionnel.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <p data-i18n="telemarketing.benefit">
+        En choisissant <strong>Webrush</strong>, vous bénéficiez d'une
+        communication directe et personnalisée avec votre audience cible, ce
+        qui facilite la promotion de vos produits ou services et améliore la
+        satisfaction client.
+      </p>
+      <p class="cta" data-i18n="telemarketing.cta">
+        Contactez-nous dès aujourd'hui pour découvrir comment nos solutions de
+        télémarketing peuvent contribuer à la croissance de votre entreprise.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-section">
+        <div class="contact-title"></div>
+        <div class="contact-info">
+          <p class="contact-item">
+            <span class="contact-label">Email:</span>
+            <a href="mailto:info@webrush.site">info@webrush.site</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
 </html>

@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "telemarketing": "Télémarketing",
+    "client": "Relation client",
+    "commercial": "Représentation commerciale",
+    "support": "Externalisation Omnicanal",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Accueil",
+    "banner_alt": "Bannière principale"
+  },
+  "about": {
+    "title": "À PROPOS",
+    "p1": "Nous plaçons le client au centre de chaque interaction, car nous croyons que la relation client est la clé du succès de toute entreprise. Spécialisés dans le télémarketing, la gestion de la relation client (CRM), la représentation commerciale et le support client omnicanal, nous nous engageons à offrir une expérience utilisateur 2.0 qui allie innovation et résultats concrets. Notre mission est de prouver que chaque interaction peut être transformée en une opportunité de découverte et de satisfaction mutuelle.",
+    "p2": "Nous aidons les entreprises à se rapprocher de leurs clients tout en économisant du temps et de l'argent, grâce à des solutions faciles à mettre en œuvre et adaptées à leurs besoins. Que ce soit à travers des campagnes de télémarketing et survey (enquête) ciblées, une gestion efficace des relations clients, ou un support omnicanal réactif, nous garantissons des résultats tangibles et une sécurité optimale dans la gestion des données.",
+    "p3": "Notre approche repose sur une garantie de qualité et une orientation client inébranlable. En collaborant avec des entreprises à travers le monde, nous les aidons à explorer de nouveaux horizons tout en renforçant la santé de leur relation client. Chez Webrush, nous croyons que chaque interaction est une opportunité de créer une connexion durable et significative. Découvrez comment nous pouvons vous accompagner pour offrir une expérience client exceptionnelle et transformer votre relation avec vos utilisateurs."
+  },
+  "telemarketing": {
+    "title": "Services de Télémarketing",
+    "intro": "Webrush met à votre disposition des services de télémarketing personnalisés pour aider votre entreprise à atteindre efficacement ses objectifs commerciaux. Notre équipe spécialisée utilise des techniques de marketing direct par téléphone pour promouvoir vos produits ou services, collecter des informations précieuses et offrir une assistance client de qualité.",
+    "services_title": "Nos services incluent :",
+    "outbound_title": "Appels sortants",
+    "outbound_desc": "Nous contactons proactivement vos clients potentiels pour présenter vos offres et générer de nouvelles opportunités commerciales.",
+    "inbound_title": "Appels entrants",
+    "inbound_desc": "Nous gérons les appels de vos clients intéressés, souvent en réponse à vos campagnes publicitaires, assurant ainsi un service client réactif et professionnel.",
+    "benefit": "En choisissant Webrush, vous bénéficiez d'une communication directe et personnalisée avec votre audience cible, ce qui facilite la promotion de vos produits ou services et améliore la satisfaction client.",
+    "cta": "Contactez-nous dès aujourd'hui pour découvrir comment nos solutions de télémarketing peuvent contribuer à la croissance de votre entreprise."
+  },
+  "client": {
+    "title": "Gestion de la Relation Client (GRC)",
+    "intro": "Notre centre de contact propose un service de Gestion de la Relation Client (GRC) conçu pour optimiser vos interactions et maximiser votre croissance tout en assurant une sécurité et une fiabilité absolues. Grâce à des outils CRM performants et une expertise éprouvée, nous centralisons et analysons toutes vos données clients, vous permettant de prouver l'impact de votre stratégie sur la satisfaction et la fidélité de vos clients. Notre approche personnalisée facilite la découverte de nouvelles opportunités commerciales tout en offrant une garantie de résultats concrets et durables.",
+    "outsource_title": "Externalisez votre GRC avec WebRush",
+    "outsource_desc": "En externalisant votre GRC avec WebRush, vous économisez du temps et de l'argent, tout en maximisant vos résultats grâce à une gestion optimisée des processus et des campagnes marketing. Avec une combinaison unique de technologie de pointe et d'expertise humaine, nous vous aidons à transformer chaque interaction en une opportunité de croissance et à explorer de nouveaux horizons pour votre entreprise.",
+    "multi_title": "Solution multi-sectorielle",
+    "multi_desc": "Que vous œuvriez dans le e-commerce, la santé, la technologie ou tout autre secteur, notre service s'adapte à vos besoins pour offrir une solution facile et performante. Nous accompagnons les entreprises de toutes tailles dans l'amélioration de leur expérience client et l'optimisation de leurs performances commerciales."
+  },
+  "commercial": {
+    "title": "Représentation Commerciale",
+    "intro": "Nous offrons un service de représentation commerciale conçu pour aider votre entreprise à atteindre ses objectifs de vente tout en explorant de nouveaux marchés. Nos représentants commerciaux expérimentés agissent comme un prolongement de votre équipe, en promouvant vos produits ou services avec professionnalisme et en prouvant leur valeur ajoutée auprès des clients. Grâce à une approche personnalisée, nous assurons la sécurité des transactions et une garantie de satisfaction, tout en facilitant la découverte de nouvelles opportunités commerciales.",
+    "services": "Nous nous chargeons de la prospection ciblée, de la présentation détaillée de vos offres, de la négociation des conditions de vente et du suivi post-vente pour fidéliser vos clients. En externalisant cette fonction avec WebRush, vous économisez du temps et de l'argent, tout en maximisant vos résultats. Que vous œuvriez dans l'industrie, la santé, la technologie ou la grande consommation, notre service s'adapte à vos besoins pour vous offrir une solution facile et efficace."
+  },
+  "support": {
+    "title": "Externalisation Omnicanal",
+    "intro": "Votre centre d'appels vous offre un service de support client omnicanal conçu pour offrir une expérience client exceptionnelle tout en renforçant la sécurité et la confiance de vos utilisateurs. Grâce à une approche intégrée, nous synchronisons tous vos canaux de communication (téléphone, e-mail, chat, réseaux sociaux, etc.) pour permettre à vos clients de passer facilement d'un canal à un autre sans perdre le fil de leur demande. Cette fluidité prouve votre engagement envers leur satisfaction et garantit un service de haute qualité.",
+    "advantages_title": "Avantages clés",
+    "advantages_intro": "En centralisant les données clients et en automatisant les processus, nous vous aidons à :",
+    "adv1": "- Économiser du temps et de l'argent",
+    "adv2": "- Maximiser vos résultats grâce à une gestion optimisée",
+    "adv3": "- Adapter la solution à tous les secteurs (e-commerce, santé, technologie...)",
+    "benefit": "Avec WebRush, explorez de nouveaux horizons pour votre entreprise et transformez chaque interaction en une opportunité de renforcer la fidélité de vos clients. Notre solution omnicanal s'adapte à vos besoins pour offrir une expérience facile et performante.",
+    "cta": "Contactez-nous pour une démonstration de notre système omnicanal intégré"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "name_label": "Votre Nom:",
+    "name_error": "Veuillez entrer votre nom",
+    "subject_label": "Sujet:",
+    "subject_placeholder": "Choisir un sujet",
+    "subject_error": "Veuillez choisir un sujet",
+    "email_label": "Email:",
+    "email_error": "Veuillez entrer une adresse email valide",
+    "message_label": "Message (optionnel):",
+    "submit": "Envoyer",
+    "subjects": {
+      "communication": "Prestation de service en communication",
+      "digital": "Marketing digital",
+      "telemarketing": "Télémarketing",
+      "telesales": "Télévente",
+      "prospecting": "Téléprospection",
+      "crm": "Gestion de la relation client",
+      "commercial": "Représentation commerciale",
+      "support": "Support client digital et par téléphone",
+      "other": "Autres - Précisez dans le message"
+    }
+  },
+  "footer": {
+    "email_label": "Email:"
+  }
+}

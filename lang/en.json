@@ -1,0 +1,82 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "telemarketing": "Telemarketing",
+        "client": "Customer Relations",
+        "commercial": "Sales Representation",
+        "support": "Omnichannel Outsourcing",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Home",
+        "banner_alt": "Main Banner"
+    },
+    "about": {
+        "title": "ABOUT US",
+        "p1": "We place the customer at the center of every interaction, because we believe that customer relationships are the key to any business's success. Specializing in telemarketing, customer relationship management (CRM), sales representation, and omnichannel customer support, we are committed to delivering a 2.0 user experience that combines innovation with concrete results. Our mission is to prove that every interaction can be transformed into an opportunity for discovery and mutual satisfaction.",
+        "p2": "We help businesses get closer to their customers while saving time and money, through easy-to-implement solutions tailored to their needs. Whether through targeted telemarketing and survey campaigns, effective customer relationship management, or responsive omnichannel support, we guarantee tangible results and optimal security in data management.",
+        "p3": "Our approach is built on a quality guarantee and unwavering customer focus. By collaborating with businesses around the world, we help them explore new horizons while strengthening their customer relationships. At Webrush, we believe that every interaction is an opportunity to create a lasting and meaningful connection. Discover how we can help you deliver an exceptional customer experience and transform your relationship with your users."
+    },
+    "telemarketing": {
+        "title": "Telemarketing Services",
+        "intro": "Webrush provides personalized telemarketing services to help your business effectively achieve its commercial objectives. Our specialized team uses direct telephone marketing techniques to promote your products or services, collect valuable information, and provide quality customer assistance.",
+        "services_title": "Our services include:",
+        "outbound_title": "Outbound Calls",
+        "outbound_desc": "We proactively contact your potential customers to present your offers and generate new business opportunities.",
+        "inbound_title": "Inbound Calls",
+        "inbound_desc": "We handle calls from your interested customers, often in response to your advertising campaigns, ensuring responsive and professional customer service.",
+        "benefit": "By choosing Webrush, you benefit from direct and personalized communication with your target audience, which facilitates the promotion of your products or services and improves customer satisfaction.",
+        "cta": "Contact us today to discover how our telemarketing solutions can contribute to your business growth."
+    },
+    "client": {
+        "title": "Customer Relationship Management (CRM)",
+        "intro": "Our contact center offers a Customer Relationship Management (CRM) service designed to optimize your interactions and maximize your growth while ensuring absolute security and reliability. With powerful CRM tools and proven expertise, we centralize and analyze all your customer data, allowing you to prove the impact of your strategy on customer satisfaction and loyalty. Our personalized approach facilitates the discovery of new business opportunities while offering a guarantee of concrete and lasting results.",
+        "outsource_title": "Outsource your CRM with WebRush",
+        "outsource_desc": "By outsourcing your CRM with WebRush, you save time and money while maximizing your results through optimized process and marketing campaign management. With a unique combination of cutting-edge technology and human expertise, we help you transform every interaction into a growth opportunity and explore new horizons for your business.",
+        "multi_title": "Multi-sector Solution",
+        "multi_desc": "Whether you work in e-commerce, healthcare, technology, or any other sector, our service adapts to your needs to offer an easy and high-performance solution. We support businesses of all sizes in improving their customer experience and optimizing their commercial performance."
+    },
+    "commercial": {
+        "title": "Sales Representation",
+        "intro": "We offer a sales representation service designed to help your business achieve its sales objectives while exploring new markets. Our experienced sales representatives act as an extension of your team, promoting your products or services with professionalism and proving their added value to customers. Through a personalized approach, we ensure transaction security and satisfaction guarantee, while facilitating the discovery of new business opportunities.",
+        "services": "We handle targeted prospecting, detailed presentation of your offers, negotiation of sales conditions, and post-sale follow-up to build customer loyalty. By outsourcing this function with WebRush, you save time and money while maximizing your results. Whether you work in industry, healthcare, technology, or consumer goods, our service adapts to your needs to offer you an easy and effective solution."
+    },
+    "support": {
+        "title": "Omnichannel Outsourcing",
+        "intro": "Your call center offers you an omnichannel customer support service designed to deliver an exceptional customer experience while enhancing the security and trust of your users. Through an integrated approach, we synchronize all your communication channels (phone, email, chat, social media, etc.) to allow your customers to easily switch from one channel to another without losing track of their request. This fluidity proves your commitment to their satisfaction and guarantees high-quality service.",
+        "advantages_title": "Key Advantages",
+        "advantages_intro": "By centralizing customer data and automating processes, we help you:",
+        "adv1": "- Save time and money",
+        "adv2": "- Maximize your results through optimized management",
+        "adv3": "- Adapt the solution to all sectors (e-commerce, healthcare, technology...)",
+        "benefit": "With WebRush, explore new horizons for your business and transform every interaction into an opportunity to strengthen customer loyalty. Our omnichannel solution adapts to your needs to deliver an easy and high-performance experience.",
+        "cta": "Contact us for a demonstration of our integrated omnichannel system"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name_label": "Your Name:",
+        "name_error": "Please enter your name",
+        "subject_label": "Subject:",
+        "subject_placeholder": "Choose a subject",
+        "subject_error": "Please choose a subject",
+        "email_label": "Email:",
+        "email_error": "Please enter a valid email address",
+        "message_label": "Message (optional):",
+        "submit": "Send",
+        "subjects": {
+            "communication": "Communication service",
+            "digital": "Digital marketing",
+            "telemarketing": "Telemarketing",
+            "telesales": "Telesales",
+            "prospecting": "Teleprospecting",
+            "crm": "Customer relationship management",
+            "commercial": "Sales representation",
+            "support": "Digital and phone customer support",
+            "other": "Other - Specify in message"
+        }
+    },
+    "footer": {
+        "email_label": "Email:"
+    }
+}

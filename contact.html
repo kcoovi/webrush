@@ -1,92 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactez-nous - WebRush</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="preload" href="img/logo.png" as="image" />
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-main">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
-        </a>
 
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="telemarketing.html">Télémarketing</a></li>
-          <li><a href="client.html">Relation client</a></li>
-          <li><a href="commercial.html">Représentation commerciale</a></li>
-          <li><a href="support.html">Support client omnicanal</a></li>
-        </ul>
-        <a href="contact.html" class="donate-link active">Contact</a>
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez WebRush pour vos besoins en télémarketing et relation client." />
+  <title>Contactez-nous - WebRush</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-primary: #fff;
+      --text-primary: #1e293b;
+      --nav-height: 80px
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary)
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      height: var(--nav-height)
+    }
+
+    .content {
+      margin-top: calc(var(--nav-height) + 20px);
+      padding: 2rem;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  </style>
+  <link rel="preload" href="img/logo.png" as="image" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/footer.min.css" />
+  <link rel="stylesheet" href="css/form.min.css" />
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="telemarketing.html" data-i18n="nav.telemarketing">Télémarketing</a></li>
+        <li><a href="client.html" data-i18n="nav.client">Relation client</a></li>
+        <li><a href="commercial.html" data-i18n="nav.commercial">Représentation commerciale</a></li>
+        <li><a href="support.html" data-i18n="nav.support">Externalisation Omnicanal</a></li>
+      </ul>
+      <a href="contact.html" class="donate-link active" data-i18n="nav.contact">Contact</a>
+      <div class="lang-selector">
+        <button class="lang-current">
+          <span class="lang-flag">FR</span>
+          <span class="lang-code">FR</span>
+          <span class="lang-arrow">▼</span>
         </button>
-      </div>
-    </nav>
-
-    <main class="content">
-      <section class="contact-form">
-        <h2>Contactez-nous</h2>
-        <form action="https://formspree.io/f/mwplejdp" method="POST">
-          <div class="form-group">
-            <label for="name">Votre Nom:</label>
-            <input type="text" id="name" name="name" />
+        <div class="lang-dropdown">
+          <div class="lang-option" data-lang="fr">
+            <span class="lang-flag">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-check">✓</span>
           </div>
-
-          <div class="form-group">
-            <label for="subject">Sujet:</label>
-            <select id="subject" name="subject" required>
-              <option value="">Choisir un sujet</option>
-              <option>Prestation de service en communication</option>
-              <option>Marketing digital</option>
-              <option>Télémarketing</option>
-              <option>Télévente</option>
-              <option>Téléprospection</option>
-              <option>Gestion de la relation client</option>
-              <option>Représentation commerciale</option>
-              <option>Support client digital et par téléphone</option>
-              <option>Autres - Précisez dans le message</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message (optionnel):</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-          </div>
-
-          <button type="submit">Envoyer</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-section">
-          <div class="contact-title"></div>
-          <div class="contact-info">
-            <p class="contact-item">
-              <span class="contact-label">Email:</span>
-              info@webrush.site
-            </p>
+          <div class="lang-option" data-lang="en">
+            <span class="lang-flag">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check">✓</span>
           </div>
         </div>
       </div>
-    </footer>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <script src="js/script.js" defer></script>
-  </body>
+  <main class="content">
+    <section class="contact-form">
+      <h2 data-i18n="contact.title">Contactez-nous</h2>
+      <form action="https://formsubmit.co/k.coovi@gmail.com" method="POST">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_subject" value="Nouveau contact WebRush">
+        <input type="hidden" name="_captcha" value="true">
+
+        <div class="form-group">
+          <label for="name" data-i18n="contact.name_label">Votre Nom:</label>
+          <input type="text" id="name" name="name" required data-i18n-error="contact.name_error" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject" data-i18n="contact.subject_label">Sujet:</label>
+          <select id="subject" name="subject" required data-i18n-error="contact.subject_error">
+            <option value="" data-i18n="contact.subject_placeholder">Choisir un sujet</option>
+            <option data-i18n="contact.subjects.communication">Prestation de service en communication</option>
+            <option data-i18n="contact.subjects.digital">Marketing digital</option>
+            <option data-i18n="contact.subjects.telemarketing">Télémarketing</option>
+            <option data-i18n="contact.subjects.telesales">Télévente</option>
+            <option data-i18n="contact.subjects.prospecting">Téléprospection</option>
+            <option data-i18n="contact.subjects.crm">Gestion de la relation client</option>
+            <option data-i18n="contact.subjects.commercial">Représentation commerciale</option>
+            <option data-i18n="contact.subjects.support">Support client digital et par téléphone</option>
+            <option data-i18n="contact.subjects.other">Autres - Précisez dans le message</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="contact.email_label">Email:</label>
+          <input type="email" id="email" name="email" required data-i18n-error="contact.email_error" />
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="contact.message_label">Message (optionnel):</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit" data-i18n="contact.submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-section">
+        <div class="contact-title"></div>
+        <div class="contact-info">
+          <p class="contact-item">
+            <span class="contact-label" data-i18n="footer.email_label">Email:</span>
+            info@webrush.site
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
 </html>

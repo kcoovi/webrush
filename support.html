@@ -1,122 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Externalisation omnicanal - WebRush</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="preload" href="img/logo.png" as="image" />
 
-    <style>
-      /* Default styling */
-      img.support-img {
-        float: right;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        width: 29%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Externalisation Omnicanal WebRush - Support client intégré sur tous les canaux." />
+  <title>Externalisation omnicanal - WebRush</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-primary: #fff;
+      --text-primary: #1e293b;
+      --nav-height: 80px
+    }
 
-      @media (max-width: 768px) {
-        img.support-img {
-          width: 55%;
-          float: right;
-          margin-left: 10px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-main">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
-        </a>
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="telemarketing.html">Télémarketing</a></li>
-          <li><a href="client.html">Relation client</a></li>
-          <li><a href="commercial.html">Représentation commerciale</a></li>
-          <li><a href="support.html">Externalisation Omnicanal</a></li>
-        </ul>
-        <a href="contact.html" class="donate-link">Contact</a>
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary)
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      height: var(--nav-height)
+    }
+
+    .content {
+      margin-top: calc(var(--nav-height) + 20px);
+      padding: 2rem;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  </style>
+  <link rel="preload" href="img/logo.png" as="image" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/footer.min.css" />
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="telemarketing.html" data-i18n="nav.telemarketing">Télémarketing</a></li>
+        <li><a href="client.html" data-i18n="nav.client">Relation client</a></li>
+        <li><a href="commercial.html" data-i18n="nav.commercial">Représentation commerciale</a></li>
+        <li><a href="support.html" class="active" data-i18n="nav.support">Externalisation Omnicanal</a></li>
+      </ul>
+      <a href="contact.html" class="donate-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-selector">
+        <button class="lang-current">
+          <span class="lang-flag">FR</span>
+          <span class="lang-code">FR</span>
+          <span class="lang-arrow">▼</span>
         </button>
-      </div>
-    </nav>
-
-    <main class="content">
-      <h1 style="text-align: left">Externalisation Omnicanal</h1>
-
-      <section style="overflow: auto">
-        <img
-          src="img/rc/sp.jpg"
-          alt="Support client omnicanal"
-          class="support-img"
-        />
-        <p>
-          Votre centre d'appels vous offre un service de support client
-          omnicanal conçu pour offrir une expérience client exceptionnelle tout
-          en renforçant la sécurité et la confiance de vos utilisateurs. Grâce à
-          une approche intégrée, nous synchronisons tous vos canaux de
-          communication (téléphone, e-mail, chat, réseaux sociaux, etc.) pour
-          permettre à vos clients de passer facilement d'un canal à un autre
-          sans perdre le fil de leur demande. Cette fluidité prouve votre
-          engagement envers leur satisfaction et garantit un service de haute
-          qualité.
-        </p>
-        <br />
-        <h2>Avantages clés</h2>
-        <p>
-          En centralisant les données clients et en automatisant les processus,
-          nous vous aidons à :
-        </p>
-        <ul>
-          <li>- Économiser du temps et de l'argent</li>
-          <li>- Maximiser vos résultats grâce à une gestion optimisée</li>
-          <li>
-            - Adapter la solution à tous les secteurs (e-commerce, santé,
-            technologie...)
-          </li>
-        </ul>
-        <br />
-        <p>
-          Avec <strong>WebRush</strong>, explorez de nouveaux horizons pour
-          votre entreprise et transformez chaque interaction en une opportunité
-          de renforcer la fidélité de vos clients. Notre solution omnicanal
-          s'adapte à vos besoins pour offrir une expérience facile et
-          performante.
-        </p>
-      </section>
-
-      <section>
-        <p class="cta">
-          <a href="contact.html" style="color: black">Contactez-nous</a> pour
-          une démonstration de notre système omnicanal intégré
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-section">
-          <div class="contact-title"></div>
-          <div class="contact-info">
-            <p class="contact-item">
-              <span class="contact-label">Email:</span>
-              <a href="mailto:info@webrush.site" style="color: #fff"
-                >info@webrush.site</a
-              >
-            </p>
+        <div class="lang-dropdown">
+          <div class="lang-option" data-lang="fr">
+            <span class="lang-flag">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-check">✓</span>
+          </div>
+          <div class="lang-option" data-lang="en">
+            <span class="lang-flag">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check">✓</span>
           </div>
         </div>
       </div>
-    </footer>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <script src="js/script.js" defer></script>
-  </body>
+  <main class="content">
+    <h1 style="text-align: left" data-i18n="support.title">Externalisation Omnicanal</h1>
+
+    <section style="overflow: auto">
+      <img src="img/rc/sp.jpg" alt="Support client omnicanal" class="support-img" />
+      <p data-i18n="support.intro">
+        Votre centre d'appels vous offre un service de support client
+        omnicanal conçu pour offrir une expérience client exceptionnelle tout
+        en renforçant la sécurité et la confiance de vos utilisateurs. Grâce à
+        une approche intégrée, nous synchronisons tous vos canaux de
+        communication (téléphone, e-mail, chat, réseaux sociaux, etc.) pour
+        permettre à vos clients de passer facilement d'un canal à un autre
+        sans perdre le fil de leur demande. Cette fluidité prouve votre
+        engagement envers leur satisfaction et garantit un service de haute
+        qualité.
+      </p>
+      <br />
+      <h2 data-i18n="support.advantages_title">Avantages clés</h2>
+      <p data-i18n="support.advantages_intro">
+        En centralisant les données clients et en automatisant les processus,
+        nous vous aidons à :
+      </p>
+      <ul>
+        <li data-i18n="support.adv1">- Économiser du temps et de l'argent</li>
+        <li data-i18n="support.adv2">- Maximiser vos résultats grâce à une gestion optimisée</li>
+        <li data-i18n="support.adv3">
+          - Adapter la solution à tous les secteurs (e-commerce, santé,
+          technologie...)
+        </li>
+      </ul>
+      <br />
+      <p data-i18n="support.benefit">
+        Avec <strong>WebRush</strong>, explorez de nouveaux horizons pour
+        votre entreprise et transformez chaque interaction en une opportunité
+        de renforcer la fidélité de vos clients. Notre solution omnicanal
+        s'adapte à vos besoins pour offrir une expérience facile et
+        performante.
+      </p>
+    </section>
+
+    <section>
+      <p class="cta" data-i18n="support.cta">
+        Contactez-nous pour une démonstration de notre système omnicanal intégré
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-section">
+        <div class="contact-title"></div>
+        <div class="contact-info">
+          <p class="contact-item">
+            <span class="contact-label">Email:</span>
+            <a href="mailto:info@webrush.site" style="color: #fff">info@webrush.site</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
 </html>

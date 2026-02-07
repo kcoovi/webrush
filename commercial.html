@@ -1,101 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Représentation Commerciale - WebRush</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="preload" href="img/logo.png" as="image" />
-    <style>
-      /* Default styling */
-      img.commercial-img {
-        float: left;
-        margin-right: 20px; /* Add space on the right side of the image */
-        margin-bottom: 10px;
-        width: 29%;
-      }
 
-      @media (max-width: 768px) {
-        img.commercial-img {
-          width: 55%;
-          float: left;
-          margin-right: 10px; /* Keep a smaller margin on mobile if you prefer */
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="nav-container">
-      <div class="nav-main">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Représentation Commerciale WebRush - Développez vos ventes avec nos experts." />
+  <title>Représentation Commerciale - WebRush</title>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    :root {
+      --primary: #10b981;
+      --bg-primary: #fff;
+      --text-primary: #1e293b;
+      --nav-height: 80px
+    }
 
-        <ul class="nav-menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="telemarketing.html">Télémarketing</a></li>
-          <li><a href="client.html">Relation client</a></li>
-          <li><a href="commercial.html">Représentation commerciale</a></li>
-          <li><a href="support.html">Support client omnicanal</a></li>
-        </ul>
-        <a href="contact.html" class="donate-link">Contact</a>
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary)
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      height: var(--nav-height)
+    }
+
+    .content {
+      margin-top: calc(var(--nav-height) + 20px);
+      padding: 2rem;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  </style>
+  <link rel="preload" href="img/logo.png" as="image" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/footer.min.css" />
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="WebRush Logo" class="logo-img" />
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+        <li><a href="telemarketing.html" data-i18n="nav.telemarketing">Télémarketing</a></li>
+        <li><a href="client.html" data-i18n="nav.client">Relation client</a></li>
+        <li><a href="commercial.html" class="active" data-i18n="nav.commercial">Représentation commerciale</a></li>
+        <li><a href="support.html" data-i18n="nav.support">Externalisation Omnicanal</a></li>
+      </ul>
+      <a href="contact.html" class="donate-link" data-i18n="nav.contact">Contact</a>
+      <div class="lang-selector">
+        <button class="lang-current">
+          <span class="lang-flag">FR</span>
+          <span class="lang-code">FR</span>
+          <span class="lang-arrow">▼</span>
         </button>
-      </div>
-    </nav>
-
-    <main class="content">
-      <h1 style="text-align: left">Représentation Commerciale</h1>
-
-      <section>
-        <img src="img/rc/repc3.jpg" alt="commercial" class="commercial-img" />
-        <p></p>
-        <p>
-          Nous offrons un service de représentation commerciale conçu pour aider
-          votre entreprise à atteindre ses objectifs de vente tout en explorant
-          de nouveaux marchés. Nos représentants commerciaux expérimentés
-          agissent comme un prolongement de votre équipe, en promouvant vos
-          produits ou services avec professionnalisme et en prouvant leur valeur
-          ajoutée auprès des clients. Grâce à une approche personnalisée, nous
-          assurons la sécurité des transactions et une garantie de satisfaction,
-          tout en facilitant la découverte de nouvelles opportunités
-          commerciales.
-        </p>
-        <br />
-      </section>
-
-      <section>
-        <p>
-          Nous nous chargeons de la prospection ciblée, de la présentation
-          détaillée de vos offres, de la négociation des conditions de vente et
-          du suivi post-vente pour fidéliser vos clients. En externalisant cette
-          fonction avec <strong>WebRush</strong>, vous économisez du temps et de
-          l’argent, tout en maximisant vos résultats. Que vous œuvriez dans
-          l’industrie, la santé, la technologie ou la grande consommation, notre
-          service s’adapte à vos besoins pour vous offrir une solution facile et
-          efficace.
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-section">
-          <div class="contact-title"></div>
-          <div class="contact-info">
-            <p class="contact-item">
-              <span class="contact-label">Email:</span>
-              info@webrush.site
-            </p>
+        <div class="lang-dropdown">
+          <div class="lang-option" data-lang="fr">
+            <span class="lang-flag">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-check">✓</span>
+          </div>
+          <div class="lang-option" data-lang="en">
+            <span class="lang-flag">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check">✓</span>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/script.js" defer></script>
-  </body>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1 style="text-align: left" data-i18n="commercial.title">Représentation Commerciale</h1>
+
+    <section>
+      <img src="img/rc/repc3.jpg" alt="commercial" class="commercial-img" />
+      <p></p>
+      <p data-i18n="commercial.intro">
+        Nous offrons un service de représentation commerciale conçu pour aider
+        votre entreprise à atteindre ses objectifs de vente tout en explorant
+        de nouveaux marchés. Nos représentants commerciaux expérimentés
+        agissent comme un prolongement de votre équipe, en promouvant vos
+        produits ou services avec professionnalisme et en prouvant leur valeur
+        ajoutée auprès des clients. Grâce à une approche personnalisée, nous
+        assurons la sécurité des transactions et une garantie de satisfaction,
+        tout en facilitant la découverte de nouvelles opportunités
+        commerciales.
+      </p>
+      <br />
+    </section>
+
+    <section>
+      <p data-i18n="commercial.services">
+        Nous nous chargeons de la prospection ciblée, de la présentation
+        détaillée de vos offres, de la négociation des conditions de vente et
+        du suivi post-vente pour fidéliser vos clients. En externalisant cette
+        fonction avec <strong>WebRush</strong>, vous économisez du temps et de
+        l’argent, tout en maximisant vos résultats. Que vous œuvriez dans
+        l’industrie, la santé, la technologie ou la grande consommation, notre
+        service s’adapte à vos besoins pour vous offrir une solution facile et
+        efficace.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-section">
+        <div class="contact-title"></div>
+        <div class="contact-info">
+          <p class="contact-item">
+            <span class="contact-label">Email:</span>
+            info@webrush.site
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
+
 </html>
