@@ -317,14 +317,14 @@ section ul {
 section ul li {
   padding: 1rem;
   margin-bottom: 0.75rem;
-  background: rgba(16, 185, 129, 0.05);
+  background: transparent;
   border-radius: 12px;
   border-left: 4px solid var(--primary);
   transition: var(--transition-base);
 }
 
 section ul li:hover {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(59, 130, 246, 0.05);
   transform: translateX(5px);
 }
 
@@ -333,7 +333,7 @@ section ul li:hover {
   font-weight: 600;
   color: var(--primary-dark);
   padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
   border-radius: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -544,7 +544,7 @@ section ul li:hover {
   }
 
   .hamburger.active span:first-child {
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(45deg) translate(8px, 8px);
     background: var(--primary);
   }
 
@@ -553,7 +553,7 @@ section ul li:hover {
   }
 
   .hamburger.active span:last-child {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-45deg) translate(8px, -8px);
     background: var(--primary);
   }
 
