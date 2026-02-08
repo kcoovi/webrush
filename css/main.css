@@ -790,7 +790,9 @@ section ul li:hover {
   font-family: 'Inter', sans-serif;
 }
 
-background: rgba(59, 130, 246, 0.2);
+.lang-current:hover {
+  background: rgba(59, 130, 246, 0.2);
+}
 
 .lang-current .lang-flag {
   font-size: 1.1rem;
