@@ -3,7 +3,8 @@
    ======================================== */
 
 .contact-form {
-  width: 90%;
+  width: calc(90vw - 4rem);
+  /* 90% of viewport minus parent padding */
   max-width: 1200px;
   margin: 2rem auto;
   padding: 3rem;
