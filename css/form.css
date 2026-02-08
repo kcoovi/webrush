@@ -127,7 +127,7 @@ button[type="submit"]::before {
 
 button[type="submit"]:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.45);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.45);
 }
 
 button[type="submit"]:hover::before {
