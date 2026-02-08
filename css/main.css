@@ -186,8 +186,7 @@ p {
 }
 
 .nav-menu a:hover {
-  color: var(--primary);
-  background: rgba(59, 130, 246, 0.08);
+  /* No hover effects */
 }
 
 .nav-menu a:hover::after {
@@ -199,7 +198,7 @@ p {
 }
 
 .nav-menu a.active::after {
-  width: 60%;
+  width: 0;
 }
 
 /* Contact Button */
