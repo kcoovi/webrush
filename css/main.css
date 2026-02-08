@@ -196,9 +196,6 @@ p {
 
 .nav-menu a.active {
   color: var(--primary) !important;
-  font-weight: 700;
-  background: rgba(16, 185, 129, 0.25) !important;
-  border-radius: 8px;
 }
 
 .nav-menu a.active::after {
