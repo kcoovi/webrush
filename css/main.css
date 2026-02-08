@@ -187,11 +187,11 @@ p {
 
 .nav-menu a:hover {
   color: var(--primary);
-  background: rgba(16, 185, 129, 0.08);
+  background: rgba(59, 130, 246, 0.08);
 }
 
 .nav-menu a:hover::after {
-  width: 60%;
+  width: 0;
 }
 
 .nav-menu a.active {
