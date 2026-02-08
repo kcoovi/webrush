@@ -630,6 +630,15 @@ section ul li:hover {
     border-radius: 12px;
   }
 
+  /* Ensure images in slider show in full on mobile */
+  .slide img,
+  .slider img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
   .fly {
     margin: 1rem auto;
     border-radius: 12px;
@@ -644,11 +653,14 @@ section ul li:hover {
     font-size: 0.95rem;
   }
 
-  /* Mobile images - full width */
+  /* Mobile images - full width, show in full */
   .telemarketing-img,
   .client-img {
     margin: 1rem auto;
     border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .commercial-img,
@@ -657,6 +669,8 @@ section ul li:hover {
     width: 100%;
     margin: 1rem 0;
     border-radius: 12px;
+    height: auto;
+    object-fit: contain;
   }
 
   /* Section styling for mobile */
