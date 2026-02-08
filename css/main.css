@@ -544,7 +544,7 @@ section ul li:hover {
   }
 
   .hamburger.active span:first-child {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(7px, 7px);
     background: var(--primary);
   }
 
@@ -553,7 +553,7 @@ section ul li:hover {
   }
 
   .hamburger.active span:last-child {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(7px, -7px);
     background: var(--primary);
   }
 
@@ -778,8 +778,8 @@ section ul li:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(59, 130, 246, 0.1);
+  border: none;
   color: var(--text-primary);
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
@@ -790,10 +790,7 @@ section ul li:hover {
   font-family: 'Inter', sans-serif;
 }
 
-.lang-current:hover {
-  background: rgba(16, 185, 129, 0.2);
-  border-color: var(--primary);
-}
+background: rgba(59, 130, 246, 0.2);
 
 .lang-current .lang-flag {
   font-size: 1.1rem;
@@ -822,7 +819,7 @@ section ul li:hover {
   top: calc(100% + 8px);
   right: 0;
   background: var(--bg-card);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 12px;
   box-shadow: var(--shadow-xl);
   overflow: hidden;
