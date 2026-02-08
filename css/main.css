@@ -916,11 +916,4 @@ section ul li:hover {
   .nav-container {
     background: #ffffff;
   }
-
-  /* Active link styling for mobile menu */
-  .nav-menu a.active {
-    color: var(--primary) !important;
-    background: rgba(16, 185, 129, 0.25) !important;
-    border-radius: 8px;
-  }
 }
